@@ -1,5 +1,14 @@
 Rich-Web-Application-Technologies-Assignment-1
 ==============================================
+Features implemented by Sergei Maslov - log in/register using JQuery UI and JQuery, chat history back-end
+					(including the server side file read/write serialization) 
+
+Features implemented by Kiril Kirilov - websockets(SignalR), form submission/getting chat messages with JQuery 
+					readme, chat history front-end
+
+The project was put to GitHub by Kiril Kirilov, because Sergei Maslov has Perforce, which he is currently using for 
+another of his projects.
+
 !Important! the deployed website can be visited on the following url:
 http://strange.com.ua/RichWeb/
 
@@ -17,7 +26,7 @@ they can be downloaded from:
 SignalR (using NuGET package manager of VS2012) - Install-Package Microsoft.AspNet.SignalR
 JQuery (using NuGET package manager of VS2012) - Install-Package jQuery
      (using website download) - http://jquery.com/download/
-JQuery UI - (using NuGET package manager of VS2012) - PM> Install-Package jQuery.UI.Combined
+JQuery UI - (using NuGET package manager of VS2012) - Install-Package jQuery.UI.Combined
 		    (using website download) -  http://jqueryui.com/download/
 
 3.Building
