@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+@{ var user = RichWeb.MvcApplication.GetUserFromSession(); }
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Rich Web Assignment: @ViewBag.Title</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+        <script src="~/Scripts/jquery.signalR-1.0.1.js"></script>
+        <script src="~/Scripts/jquery.md5.js"></script>
+        <script src="~/Scripts/jquery-ui-1.8.24.min.js"></script>
+        <script src="~/signalr/hubs" type="text/javascript"></script>
+        <script src="~/Scripts/ChatFunctions.js"></script>
+        @Styles.Render("~/Content/css")
+        @Styles.Render("~/Content/themes/base/css")
+
+        <script type="text/javascript">
+            var isLoggedIn = true;
+@if( user == null )
+{
+<text>
+            isLoggedIn = false;
+            $(document).ready(function ()
+            {
+                showLoginDialog();
+            });
+</text>
+}
+        </script>
+
+    </head>
+    <body>
+        <div id="body">
+            <section class="content-wrapper main-content clear-fix">
+                    <a href="#" id="logout" onclick="logout(); return false;">Logout</a>
+
+                @*<div id="chat" style="text-decoration: underline"> ChatHistory </div>*@
+                @RenderBody()
+            </section>
+        </div>
+
+        @*  Dialog *@
+        <div id="dialog">
+            <form id="dialogForm" onsubmit="return false">
+                <table border="0">
+                    <tr>
+                        <td>Login:</td>
+                        <td>@Html.TextBox("txLogin")</td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td>@Html.Password("txPassword")</td>
+                    </tr>
+                </table>
+                <span style="color:#f00; padding: 5px 0px" id="dialogMessage"></span>
+        
+                <div style="text-align:center">
+                    <input type="submit" id="btnSubmit" value="OK" />
+                </div>
+                
+                <div style="text-align:right" id="divSignupLink">
+                    <a href="#" onclick="showRegisterDialog(); return false;">Sign up</a>
+                </div>
+                <div style="text-align:right" id="divLoginLink">
+                    <a href="#" onclick="showLoginDialog(); return false;">Log in</a>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>

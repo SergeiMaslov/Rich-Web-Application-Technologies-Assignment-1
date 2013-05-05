@@ -1,0 +1,22 @@
+﻿@model string
+@{
+
+    ViewBag.Title = "Chat";
+}
+
+<div class="chatInputContainer">
+    <div style="height:400px; overflow-y:auto; padding:0px; background-color:#fafafa" id="chatDiv">
+        <table style="width:100%; height:390px">
+            <tr>
+                <td id="chatDiscussion" style="padding:5px; background-color:#fafafa; vertical-align:bottom"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <form id="chatForm">
+        @Html.TextBox("newMessageTextArea")
+        <input type="submit" id="sendMessageButton" value="Send">
+    </form>
+    @*Html.Hidden("username", Model)*@
+</div>
+
