@@ -4,7 +4,7 @@ Features implemented by Sergei Maslov - log in/register using JQuery UI and JQue
 					(including the server side file read/write serialization) 
 
 Features implemented by Kiril Kirilov - websockets(SignalR), form submission/getting chat messages with JQuery 
-					readme, chat history front-end, gravatar + md5
+					readme, chat history front-end, gravatar
 
 The project was put to GitHub by Kiril Kirilov, because Sergei Maslov has Perforce, which he is currently using for 
 another of his projects.
