@@ -1,9 +1,9 @@
 Rich-Web-Application-Technologies-Assignment-1
 ==============================================
-Features implemented by Sergei Maslov - log in/register using JQuery UI and JQuery, chat history back-end
+Features implemented by Sergei Maslov D10121922 - log in/register using JQuery UI and JQuery, chat history back-end
 					(including the server side file read/write serialization) 
 
-Features implemented by Kiril Kirilov - websockets(SignalR), form submission/getting chat messages with JQuery 
+Features implemented by Kiril Kirilov C09718277 - websockets(SignalR), form submission/getting chat messages with JQuery 
 					readme, chat history front-end, gravatar
 
 The project was put to GitHub by Kiril Kirilov, because Sergei Maslov has Perforce, which he is currently using for 
